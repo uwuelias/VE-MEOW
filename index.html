@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comic+Neue&family=Gabarito:wght@500&family=Lato&family=Montserrat&family=Mukta:wght@600&family=MuseoModerno:wght@600&family=Open+Sans&family=PT+Sans:wght@700&family=Pixelify+Sans:wght@600&family=Poppins:wght@500&family=REM:wght@300&family=Roboto+Condensed&family=Roboto+Slab&family=Tilt+Neon&display=swap");
+      .container {
+        text-align: center;
+        font-family: "montserrat";
+      }
+      .color {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        outline: none;
+      }
+
+      #green {
+        background-color: #56EC62;
+      }
+      #red {
+        background-color: #F1585C;
+      }
+      .buy {
+        width: 142px;
+        height: 40px;
+        background-color: #000; 
+        color: #fff; 
+        border: none; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        line-height: 40px; 
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="phone-case.png" id="phone" />
+      <h1>
+        ​Eco Friendly Iphone Recycle iPhone 13 <br />Pro Case With Flower<br />
+        $15.00
+      </h1>
+      <button class="color" id="green"></button>
+      <button class="color" id="red"></button>
+      <br>
+      <a href="https://portal.veinternational.org/buybuttons/us015434/btn/iphone-13-custom-case-with-image-9/"><button class="buy"><b>BUY</b></button></a>
+    </div>
+
+    <script>
+        const green = document.getElementById('green');
+        const red = document.getElementById('red');
+        const phone = document.getElementById('phone');
+
+        green.addEventListener('click', function() {
+            phone.src = 'phone 3.png';
+        })
+
+        red.addEventListener('click', function() {
+            phone.src='phone 2.png'
+        })
+    </script>
+  </body>
+</html>
